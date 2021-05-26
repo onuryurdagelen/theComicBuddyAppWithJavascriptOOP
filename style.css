@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-image: url("deadpool-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+  line-height: 1.7;
+  margin-top: 20px;
+  
+}
+body
+h1{
+    text-align: center;
+}
+h3{
+    font-size: 2rem;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: row;
+}
+.form-section{
+    height: 500px;
+}
+.table-section{
+    height: 500px;
+}
+.superhero-name h3{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.superhero-universe{
+    margin-bottom: 10px;
+}
+.superhero-universe h3{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.input-name{
+    background: rgba(4, 3, 65, 0.5);
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+}
+.input-universe{
+    background: rgba(4, 3, 65, 0.5);
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+}
+.superhero-power{
+    margin-bottom: 10px;
+}
+.superhero-power h3{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.input-power{
+    background: rgba(4, 3, 65, 0.5);
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+}
+.button-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
+.add-hero{
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    /* border: none; */
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.add-hero:hover{
+    background-color: rgba(4, 3, 65, 1);
+}
+.add-hero:active{
+    transform: translateY(2px);
+}
+
+.table{
+    background: rgba(4, 3, 65, 0.5);
+    padding: 5px 10px;
+    width:700px;
+}
+.table-body{
+    background: rgba(104, 54, 221, 0.5);
+    width:600px;
+}
+#table-row{
+    text-align: center;
+}
+input{
+    font-size: 2rem;
+    margin: 10px 0;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: rgba(4, 3, 65, 1);
+}
+/*Clear list button */
+.clear-list{
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    /* border: none; */
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    margin:10px 0 0 20px;
+}
+.clear-list:hover{
+    background-color: rgba(4, 3, 65, 1);
+}
+.clear-list:active{
+    transform: translateY(2px);
+}
+.validation{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1.2);
+    z-index:2;
+    padding:20px;
+}
+.validation-success{
+    background-color: rgba(55,136,37,0.9);
+    line-height: 130px;
+    text-align: center;
+    font-size:2rem;
+    display: none;
+}
+.validation-error{
+    background-color: rgba(136,58,37,0.9);
+    display:none;
+    line-height: 130px;
+    text-align:center;
+    font-size:2rem;
+}
+.validation-info {
+    background-color: rgba(206, 218, 39, 0.9);
+    line-height: 130px;
+    text-align: center;
+    font-size:2rem;
+    display: none;
+}
+.show-validation{
+    display:block;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .container{
+        width: 95%;
+    }
+}

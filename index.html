@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1a20d3c831.js" crossorigin="anonymous"></script>
+    <title>The Comic Buddy App - OOP</title>
+</head>
+<body>
+    
+    <h1>The Comic Buddy App</h1>
+    <div class="background"></div>
+    <div class="validation validation-success">Superhero successfully Added✔</div>
+    <div class="validation validation-error">Superhero was not successfully added.You must fill out all of fields❌</div>
+    <div class="validation validation-info">
+        The list items successfully removed!</div>
+    <div class="container">
+        <div class="form">
+            <div class="form-group">
+              <h3>SuperHero Name</h3>
+              <input type="text" class="input-name">
+            </div>
+            <div class="form-group">
+              <h3>SuperHero Universe</h3>
+              <input type="text" class="input-universe">
+            </div>
+            <div class="form-group">
+                <h3>SuperHero Power</h3>
+                <input type="text" class="input-power">
+              </div>
+            <button type="submit" class="add-hero">Add Hero</button>
+            <button type="submit" class="clear-list">Clear List</button>
+            </div>
+        <section class="table-section">
+            <table class="table">
+                <thead class="table-head">
+                    <tr>
+                        <th>Name</th>
+                        <th>Universe</th>
+                        <th>Power</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                      <!-- <tr class="table-row">
+                        <td>asdasd</td>
+                        <td>asdasd</td>
+                        <td>asdsad</td> 
+                        <td><a href="#"><i class="fas fa-trash"></i></a></td>  -->
+                    </tr>  
+                </tbody>
+            </table>
+        </section>
+    </div>
+<!-- JS File -->
+<script src="script.js"></script>
+</body>
+</html>
